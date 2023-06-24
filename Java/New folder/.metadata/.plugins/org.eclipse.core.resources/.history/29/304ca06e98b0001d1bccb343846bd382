@@ -1,0 +1,49 @@
+package FactorialServerAndClient;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.Socket;
+
+public class Client {
+	public static void main(String[] args) {
+		
+		Socket socket = null;
+		DataInputStream dis = null;
+		DataOutputStream dos = null;
+		BufferedReader br = null;
+		
+		try {
+			
+			socket = new Socket("localhost", 1669);
+			dis = new DataInputStream(socket.getInputStream());
+			
+			OutputStream os = socket.getOutputStream();
+			dos = new DataOutputStream(os);
+			
+			br = new BufferedReader(new InputStreamReader(System.in));
+			
+			int numFromClient = 0;
+			long numFromServer = 0;
+			while(numFromClient != -1) {
+				numFromClient = br.read();
+				dos.writeInt(numFromClient);
+				
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

@@ -1,0 +1,15 @@
+package main;
+
+public class ATMProxy implements GetATMData{
+
+	@Override
+	public ATMState getATMData() {
+		
+	}
+
+	@Override
+	public int getCashInMachine() {
+		
+	}
+
+}

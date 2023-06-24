@@ -1,0 +1,29 @@
+package main;
+
+public class HasCard implements ATMState{
+
+	@Override
+	public void insertCard() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void ejectCard() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void insertPin(int pinEntered) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void requestCash(int cashToWidthraw) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

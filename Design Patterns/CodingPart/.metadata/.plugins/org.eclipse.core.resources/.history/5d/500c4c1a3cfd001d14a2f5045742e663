@@ -1,0 +1,79 @@
+package main;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class FlyWeightTest extends JFrame{
+	
+	JButton startDrawing;
+	
+	int windowWidth = 1750;
+	int windowHeight = 150;
+	
+	Color[] shapeColor = {Color.orange, Color.black, Color.red, Color.yellow, Color.blue,
+			Color.pink, Color.cyan, Color.magenta, Color.gray};
+	
+	public static void main(String[] args) {
+		new FlyWeightTest();
+	}
+	
+	public FlyWeightTest() {
+		this.setSize(windowWidth, windowHeight);
+		this.setLocationRelativeTo(null);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setTitle("FlyWweight Test");
+		
+		JPanel contentPane = new JPanel();
+		contentPane.setLayout(new BorderLayout());
+		
+		final JPanel drawingPanel = new JPanel();
+		
+		startDrawing = new JButton("Draw Stuff");
+		
+		contentPane.add(drawingPanel, BorderLayout.CENTER);
+		contentPane.add(startDrawing, BorderLayout.SOUTH);
+		
+		startDrawing.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Graphics g = drawingPanel.getGraphics();
+				
+				long startTime = System.currentTimeMillis();
+				
+				for(int i=0;i<100000;i++) {
+					g.setColor(getRandColor());
+					g.fillRect(getRandX(), getRandY(), getRandX(), getRandY());
+				}
+			}
+		});
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

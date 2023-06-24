@@ -1,0 +1,23 @@
+package main;
+
+public class TreeCheesePizza extends Pizza {
+
+	@Override
+	public void setDescrioption(String newDescription) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double getCost() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

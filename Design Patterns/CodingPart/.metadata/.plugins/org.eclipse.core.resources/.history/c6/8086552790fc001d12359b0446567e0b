@@ -1,0 +1,19 @@
+package main;
+
+public class SecurityCodeCheck {
+	
+	private int accountNumber = 12345678;
+	
+	public int getAccountNumber() {return this.accountNumber;}
+	
+	public boolean isCodeCorrect(int secCodeToCheck) {
+		if(secCodeToCheck == getAccountNumber()) {
+			return true;
+		} else {
+			return false;
+		}
+		
+	}
+	
+	
+}

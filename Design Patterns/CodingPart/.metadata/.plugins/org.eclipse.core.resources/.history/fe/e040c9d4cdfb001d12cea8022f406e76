@@ -1,0 +1,27 @@
+package main;
+
+import java.util.ArrayList;
+
+public class StockGrabber implements Subject{
+	
+	private ArrayList<Observer> observers;
+
+	@Override
+	public void register(Observer o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void unregister(Observer o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifyObserver() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package main;
+
+public class EnemyShipTesting {
+
+	public static void main(String[] args) {
+		EnemyShip ufoShip = new UFOEnemyShip();
+		
+	}
+
+}

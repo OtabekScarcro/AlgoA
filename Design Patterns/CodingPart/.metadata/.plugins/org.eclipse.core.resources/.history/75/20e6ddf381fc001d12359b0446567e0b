@@ -1,0 +1,19 @@
+package main;
+
+import java.util.List;
+
+public class TurnItAllOff implements Command{
+	
+	List<ElectronicDevice> theDevices;
+	
+	public TurnItAllOff(List<ElectronicDevice> theDevices) {
+		this.theDevices = theDevices;
+	}
+
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+	}
+}

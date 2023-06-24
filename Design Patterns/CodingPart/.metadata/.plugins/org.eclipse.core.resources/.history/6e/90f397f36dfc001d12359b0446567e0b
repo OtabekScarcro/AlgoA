@@ -1,0 +1,6 @@
+package main;
+
+public abstract class Pizza {
+	public abstract void setDescrioption(String newDescription);
+	
+}

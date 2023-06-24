@@ -1,0 +1,15 @@
+package main;
+
+public class SongListGenerator {
+	public static void main(String[] args) {
+		
+		SongComponent industrialMusic = 
+				new SongGroup("Industrial", "is a style of experimental music that draws on transgressive");
+		
+		SongComponent industrialMusic = 
+				new SongGroup("Industrial", "is a style of experimental music that draws on transgressive");
+		
+		SongComponent industrialMusic = 
+				new SongGroup("Industrial", "is a style of experimental music that draws on transgressive");
+	}
+}

@@ -1,0 +1,7 @@
+package main;
+
+import java.util.HashMap;
+
+public class RectFactroy {
+	private static final HashMap<Color, MyRect> rectsByColor = new HashMap<K, V>()
+}

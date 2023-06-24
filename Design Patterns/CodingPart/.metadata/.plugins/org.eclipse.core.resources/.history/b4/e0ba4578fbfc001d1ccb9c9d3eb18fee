@@ -1,0 +1,72 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Hashtable;
+
+public class DiscJockey {
+	SongIterator songs70s;
+	SongIterator songs80s;
+	SongIterator songs90s;
+
+	public DiscJockey(SongIterator songs70s, SongIterator songs80s, SongIterator songs90s) {
+		this.songs70s = songs70s;
+		this.songs80s = songs80s;
+		this.songs90s = songs90s;
+	}
+
+
+	/*
+	public void showTheSongs() {
+		
+		ArrayList<SongInfo> all70s = songs70s.getBestSongs();
+		
+		System.out.println("\nSongs of the 70s");
+		
+		for(SongInfo song : all70s) {
+			System.out.println(song.getSongName());
+			System.out.println(song.getBandName());
+			System.out.println(song.getYearReleased());
+		}
+		
+		SongInfo[] all80s = songs80s.getBestSongs();
+		
+		System.out.println("\nSongs of the 80s");
+		
+		for(SongInfo song : all80s) {
+			System.out.println(song.getSongName());
+			System.out.println(song.getBandName());
+			System.out.println(song.getYearReleased());
+		}
+		
+		Hashtable<Integer, SongInfo> all90s = songs90s.getBestSongs();
+		
+		System.out.println("\nSongs of the 90s");
+		
+		for(Enumeration<Integer> e = all90s.keys(); e.hasMoreElements();) {
+			
+			SongInfo song = all90s.get(e.nextElement());
+			
+			System.out.println(song.getSongName());
+			System.out.println(song.getBandName());
+			System.out.println(song.getYearReleased());
+		}
+	}
+	*/
+	
+	public void showTheSongs2() {
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+

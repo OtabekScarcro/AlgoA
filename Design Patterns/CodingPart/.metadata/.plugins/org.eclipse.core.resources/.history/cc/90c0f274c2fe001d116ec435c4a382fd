@@ -1,0 +1,8 @@
+package main;
+
+public class Numbers {
+	private int number1;
+	private int number2;
+	
+	private String calculationWanted;
+}

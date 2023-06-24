@@ -1,0 +1,11 @@
+package main;
+
+public class ScrabbleTest {
+	public static void main(String[] args) {
+		Singleton newInstance = Singleton.getInstance();
+		
+		System.out.println("Instance 1 ID: " + System.identityHashCode(newInstance));
+		
+		System.out.println(newInstance.getLetterList());
+	}
+}

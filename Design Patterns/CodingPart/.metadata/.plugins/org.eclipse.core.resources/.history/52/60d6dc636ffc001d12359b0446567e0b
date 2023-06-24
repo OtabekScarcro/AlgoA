@@ -1,0 +1,14 @@
+package main;
+
+public class Mozarella extends ToppingDecorator{
+
+	public Mozarella(Pizza newPizza) {
+		super(newPizza);
+
+		System.out.println("Adding Dough");
+		
+		System.out.println("Adding Moz");
+		
+	}
+	
+}

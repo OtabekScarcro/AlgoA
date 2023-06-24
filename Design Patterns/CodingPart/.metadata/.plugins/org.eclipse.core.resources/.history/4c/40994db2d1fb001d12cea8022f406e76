@@ -1,0 +1,13 @@
+package main;
+
+public class GrabStocks {
+	public static void main(String[] args) {
+		StockGrabber stockGrabber = new StockGrabber();
+		
+		StockObserver observer1 = new StockObserver(stockGrabber);
+		
+		stockGrabber.setIbmPrice(197.07);
+		stockGrabber.setIbmPrice(677.60);
+		stockGrabber.setIbmPrice(676.40);
+	}
+}

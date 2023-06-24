@@ -1,0 +1,11 @@
+package main;
+
+public class DiscJockey {
+	SongComponent songList;
+
+	public DiscJockey(SongComponent songList) {
+		this.songList = songList;
+	}
+	
+	
+}

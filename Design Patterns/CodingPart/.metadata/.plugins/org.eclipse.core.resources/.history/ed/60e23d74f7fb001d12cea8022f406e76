@@ -1,0 +1,30 @@
+package main;
+
+public class OldRobotBuilder implements RobotBuilder {
+
+	private Robot robot;
+	
+	@Override
+	public void buildRobotHead() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void buildRobotTorso() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void buildRobotArms() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void buildRobotLegs() {
+		robot.setRobodLegs("Roller Skates");
+	}
+
+}

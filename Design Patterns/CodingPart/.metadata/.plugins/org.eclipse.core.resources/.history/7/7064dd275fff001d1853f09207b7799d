@@ -1,0 +1,12 @@
+package main;
+
+import javax.swing.JButton;
+
+public class TestMemento {
+	public static void main(String[] args) {
+		new TestMemento();
+	}
+	
+	private JButton saveBut, undoBut, redoBut;
+	
+}

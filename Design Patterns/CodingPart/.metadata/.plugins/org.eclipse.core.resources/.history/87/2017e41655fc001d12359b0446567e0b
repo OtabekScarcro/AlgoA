@@ -1,0 +1,11 @@
+package main;
+
+public class Sheep implements Animal{
+
+	@Override
+	public Animal makeCopy() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,8 @@
+package main;
+
+public class ATMMachine {
+	private ATMState hasCard;
+	private ATMState hasCard;
+	private ATMState hasCard;
+	private ATMState hasCard;
+}

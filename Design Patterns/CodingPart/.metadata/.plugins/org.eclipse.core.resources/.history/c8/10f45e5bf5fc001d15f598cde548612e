@@ -1,0 +1,26 @@
+package main;
+
+import java.util.ArrayList;
+
+public class SongOfThe90s {
+
+	HashTable<Integer, SongInfo> bestSongs = new HashTable<Integer, SongInfo>();
+	
+	int hashKey = 0;
+	
+	public SongOfThe90s() {
+		
+		addSong("Roam", "B52s", 1989);
+		addSong("Cruel Summer", "Bananarama", 1984);
+		addSong("Head Over Heels", "Tears For Fears", 1985);
+	}
+	
+	public void addSong(String songName, String bandName, int yearReleased) {
+		SongInfo songInfo = new SongInfo(songName, bandName, yearReleased);
+		bestSongs[arrayValue++] = songInfo;
+	}
+	
+	public SongInfo[] getBestSongs(){
+		return bestSongs;
+	}
+}

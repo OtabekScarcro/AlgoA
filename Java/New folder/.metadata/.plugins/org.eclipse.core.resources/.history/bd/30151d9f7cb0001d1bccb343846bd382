@@ -1,0 +1,21 @@
+package socketClient;
+
+import java.io.DataOutputStream;
+import java.net.Socket;
+
+public class Client {
+	public static void main(String[] args) {
+		
+		Socket socket = null;
+		DataOutputStream dos = null;
+		
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+}

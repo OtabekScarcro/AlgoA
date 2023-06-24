@@ -1,0 +1,15 @@
+package main;
+
+import java.util.ArrayList;
+
+public class SongOfThe70s {
+	ArrayList<SongInfo> bestSongs;
+	
+	public SongOfThe70s() {
+		bestSongs = new ArrayList<SongInfo>();
+		
+		addSong("Imagine", "John Lennon", 1971);
+		addSong("Imagine", "John Lennon", 1971);
+		addSong("Imagine", "John Lennon", 1971);
+	}
+}

@@ -1,0 +1,6 @@
+package main;
+
+public class SampleClass {
+	private String name = "Otabek";
+	private String surname = "Otabaev";
+}

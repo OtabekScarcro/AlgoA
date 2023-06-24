@@ -1,0 +1,175 @@
+-----------------------
+Ep-1. Strategy Pattern
+-----------------------
+
+--> Strategy Pattern defines a family of algorithms encapsulate each one and makes them
+    interchangeable strategy let's the algorithm vary independently from the clients that use it
+
+
+-----------------------
+Ep-2. Observer Pattern
+-----------------------
+
+--> The Observer Pattern defines one to many dependency between objects, so that when 
+    one object changes state, all of its dependencies notified and updated automatically.
+
+
+-----------------------
+Ep-3. Decorator Pattern
+-----------------------
+
+--> Decorator Pattern attaches additional responsibilities to an object dinamicly,
+    decorators provide flexible alternative to subclassing for extending functionality
+
+
+-----------------------------
+Ep-4. Factory Method Pattern
+-----------------------------
+
+--> Factory Method pattern defines an interface for creating an object but let's subclasses
+    decide which class to instantiate factory method lets the class defer instantiation
+    to subclasses
+
+
+-------------------------------
+Ep-5. Abstract Factory Pattern
+-------------------------------
+
+--> Abstract Factory Pattern provides an interface for creating families of related or
+    dependent objects without specifying their concrete classes.
+
+
+-------------------------------
+Ep-6. Singleton Pattern
+-------------------------------
+
+--> The singleton pattern ensures a class has only one instance and provides a global point of
+    access to it.
+
+
+-------------------------------
+Ep-7. Command Pattern
+-------------------------------
+
+--> The Command pattern is a behavioral design pattern that encapsulates a request
+    as an object, thereby allowing users to parameterize clients with different requests,
+    queue or log requests, and support undoable operations.
+
+--> The main idea behind the Command pattern is to decouple the sender of a request (client)
+    from the object that performs the action (receiver) by introducing an intermediate
+    object called the Command.
+
+
+----------------------
+Ep-8. Adapter Pattern
+----------------------
+
+--> The Adapter pattern is a structural design pattern that allows objects with incompatible 
+    interfaces to work together. It acts as a bridge between two incompatible interfaces, 
+    converting the interface of one class into another interface that clients expect.
+
+--> The main purpose of the Adapter pattern is to enable communication and interaction between 
+    classes that would otherwise be incompatible due to differing interfaces or protocols. 
+    It allows objects to collaborate without having to modify their existing code.
+
+
+----------------------
+Ep-9. Facade Pattern
+----------------------
+
+--> The Facade pattern is a structural design pattern that provides a simplified interface
+    to a complex system or set of classes. It acts as a higher-level interface,
+    making it easier for clients to interact with the subsystem by hiding its 
+    complexity behind a single unified interface.
+
+--> By using the Facade pattern, clients can interact with a simplified and high-level
+    interface, without needing to understand the inner workings and complexities of 
+    the subsystem.
+
+
+----------------------
+Ep-10. Proxy Pattern
+----------------------
+
+--> Proxy Pattern provides a surrogate or placeholder for another object to control access to it.
+--> There are 3 ways that proxy pattern is used to control access:
+	--> Remote Proxy
+	--> Virtual Proxy
+	--> Protection Proxy
+--> Remote proxy is suggested to be used when you want to access a resource that's remote.
+    We mean with Remote here we mean something that could exist on for example a different
+    server or in a completely different name space in a different called project.
+--> Virtual Proxy controls access to a resource that is expensive to create.
+--> Protection Proxy controls access to a resource based on access rights.
+
+
+----------------------
+Ep-11. Bridge Pattern
+----------------------
+
+--> The intent of the Bridge Pattern is to the decouple and abstraction from its
+    implementation so that the two can vary independently.
+
+--> It is used when there are two or more orthogonal dimensions of variation
+    in a system. By separating the abstraction and its implementation,
+    the Bridge pattern allows them to vary independently.
+
+--> The main goal of the Bridge pattern is to enable the abstraction and
+    implementation to evolve independently. This means that you can introduce
+    new abstractions or implementations without modifying the existing ones.
+
+--> It also helps in reducing the coupling between the abstraction and the implementation,
+    making the system more flexible and maintainable.
+
+
+-------------------------------
+Ep-13. Template Method Pattern
+-------------------------------
+
+--> Template Method Pattern allows you to define the skeleton of an algorithm in a base class
+    while allowing subclasses to provide specific implementations for certain steps
+    of the algorithm.
+
+--> The Template Method Pattern is useful when you have an algorithm that consists
+    of multiple steps, and the overall structure of the algorithm remains the same,
+    but certain steps may vary or need to be customized by subclasses.
+
+--> By using the Template Method Pattern, you can achieve a clear separation between
+    the overall algorithm and the specific variations, making the code more flexible,
+    extensible, and easier to maintain. It promotes the principle of "code once,
+    reuse many times" by providing a reusable template that encapsulates the common
+    parts of the algorithm.
+
+
+-------------------------
+Ep-14. Composite Pattern
+-------------------------
+
+--> Composite Pattern composes objects into tree structures to represent part-whole hierarchies,
+    composite let's clients treat individial objects and compositions of objects uniformly.
+
+
+------------------------
+Ep-16. Iterator Pattern
+------------------------
+
+--> The Iterator Pattern provides a way to access the elements of an aggregate object
+    sequestially without exposing its underlying representation.
+
+
+---------------------
+Ep-17. State Pattern
+---------------------
+
+--> State Pattern allows an object to alter its behavior when its internal state changes
+    the object will appear to change its class.
+
+
+---------------------------
+Ep-18. Null Object Pattern
+---------------------------
+
+--> 
+
+
+

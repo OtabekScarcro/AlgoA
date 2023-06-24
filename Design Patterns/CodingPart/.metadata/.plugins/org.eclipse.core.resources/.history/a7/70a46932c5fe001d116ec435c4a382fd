@@ -1,0 +1,8 @@
+
+public class ConversionContext {
+	private String conversionQues = "";
+	private String conversionResponse = "";
+	private String fromConversion = "";
+	private String toConversion = "";
+	
+}

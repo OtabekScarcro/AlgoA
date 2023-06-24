@@ -1,0 +1,13 @@
+package main;
+
+public class TestTheRemote {
+	public static void main(String[] args) {
+		
+		RemoteButton theTV = new TVRemoteMute(new TVDevice(1, 200));
+		
+		RemoteButton theTV = new TVRemoteMute(new TVDevice(1, 200));
+		
+		RemoteButton theTV = new TVRemoteMute(new TVDevice(1, 200));
+		
+	}
+}

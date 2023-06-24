@@ -1,0 +1,34 @@
+package main;
+
+public class ItalianHoagie extends Hoagie{
+
+	String []meatUsed = {"Salami", "Pepperoni", "Capicola Ham"};
+	String []cheeseUsed = {"Provolone"};
+	String []VeggiesUsed = {"Lettuce", "Tomatoes", "Onions", "Sweet Peppers"};
+	String []meatUsed = {"Salami", "Pepperoni", "Capicola Ham"};
+	
+	@Override
+	void addCheese() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void addMeat() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void addVegetables() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	void addCondiments() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

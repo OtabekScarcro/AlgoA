@@ -1,0 +1,17 @@
+package main;
+
+public class TestRobotBuilder {
+	public static void main(String[] args) {
+		RobotBuilder oldStyleRobot = new OldRobotBuilder();
+		
+		RobotEnginer robotEnginer = new RobotEnginer(oldStyleRobot);
+		
+		robotEnginer.makeRobot();
+		
+		Robot firstRobot = robotEnginer.getRobot();
+		
+		System.out.println("Robot built");
+		
+		
+	}
+}

@@ -1,0 +1,7 @@
+package main;
+
+import java.util.Iterator;
+
+public interface SongIterator {
+	public Iterator<E> createIterator
+}

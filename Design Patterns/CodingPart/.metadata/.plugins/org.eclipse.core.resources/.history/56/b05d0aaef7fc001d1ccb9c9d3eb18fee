@@ -1,0 +1,22 @@
+package main;
+
+import java.util.ArrayList;
+
+public class DiscJockey {
+	SongsOfThe70s songs70s;
+	SongsOfThe80s songs80s;
+	SongsOfThe90s songs90s;
+	
+	public DiscJockey(SongsOfThe70s songs70s, SongsOfThe80s songs80s, SongsOfThe90s songs90s) {
+		this.songs70s = songs70s;
+		this.songs80s = songs80s;
+		this.songs90s = songs90s;
+	}
+	
+	public void showTheSongs() {
+		ArrayList<SongInfo> all70s = songs70s.getBestSongs();
+		
+		System.out.println("Songs of the 70s\n");
+	}
+	
+}

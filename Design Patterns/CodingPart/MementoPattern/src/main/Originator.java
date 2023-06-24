@@ -1,0 +1,22 @@
+package main;
+
+public class Originator {
+	private String article;
+	public void set(String newArticle) {
+		System.out.println("From Originator: Current version of article\n" + newArticle + "\n");
+		this.article = newArticle;
+	}
+	
+	public Memento storeInMemento() {
+		System.out.println("From Originator: Saving to Memento");
+		return new Memento(this.article);
+	}
+	
+	public String restoreFromMemento(Memento memento) {
+		article = memento.getSavedArticle();
+		
+		System.out.println("From Originator: Previous artice saved in Memento\n" + article + "\n");
+		return article;
+	}
+	
+}

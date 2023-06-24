@@ -1,0 +1,10 @@
+package main;
+
+public class SongGroup extends SongComponent{
+
+	public SongGroup(int componentIndex) {
+		super(componentIndex);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

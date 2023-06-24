@@ -1,0 +1,8 @@
+package main;
+
+public class BigUFOEnemyShip extends UFOEnemyShip{
+	public BigUFOEnemyShip() {
+		setName("UFO Enemy Ship");
+		setDamage(20.0);
+	}
+}

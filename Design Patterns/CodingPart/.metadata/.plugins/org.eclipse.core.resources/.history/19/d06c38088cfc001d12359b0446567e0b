@@ -1,0 +1,28 @@
+package main;
+
+public class EnemyRobotAdapter implements EnemyAttacker{
+	
+	EnemyRobot theRobot;
+	
+	public EnemyRobotAdapter(EnemyRobot theRobot) {
+		this.theRobot = theRobot;
+	}
+
+	@Override
+	public void fireWeapon() {
+		theRobot.smashWithHands();
+	}
+
+	@Override
+	public void driveForward() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void assignDriver(String driverName) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

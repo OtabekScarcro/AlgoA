@@ -1,0 +1,53 @@
+package main;
+
+public class AccessingAndModifyingByReflection {
+	public static void main(String[] args) {
+        SampleClass sample = new SampleClass("Hello", 42);
+
+        // Access and modify private fields using Reflection
+        try {
+            // Get the class object for the instance
+            Class<?> clazz = sample.getClass();
+
+            // Access the private fields
+            Field nameField = clazz.getDeclaredField("name");
+            Field surnameField = clazz.getDeclaredField("surname");
+            Field ageField = clazz.getDeclaredField("age");
+
+            // Enable access to private fields
+            nameField.setAccessible(true);
+            surnameField.setAccessible(true);
+            ageField.setAccessible(true);
+
+            // Get the current field values
+            String nameValue = (String) nameField.get(sample);
+            String surnameValue = (String) surnameField.get(sample);
+            int ageValue = (int) ageField.get(sample);
+
+            // Print the current field values
+            System.out.println("Before modification:");
+            System.out.println("Name: " + nameValue);
+            System.out.println("Surname: " + surnameValue);
+            System.out.println("Age: " + ageValue);
+
+            // Modify the field values
+            nameField.set(sample, "John");
+            surnameField.set(sample, "Doe");
+            ageField.set(sample, 30);
+
+            // Get the modified field values
+            nameValue = (String) nameField.get(sample);
+            surnameValue = (String) surnameField.get(sample);
+            ageValue = (int) ageField.get(sample);
+
+            // Print the modified field values
+            System.out.println("\nAfter modification:");
+            System.out.println("Name: " + nameValue);
+            System.out.println("Surname: " + surnameValue);
+            System.out.println("Age: " + ageValue);
+
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            e.printStackTrace();
+        }
+    }
+}

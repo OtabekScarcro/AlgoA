@@ -1,0 +1,35 @@
+package main;
+
+import java.lang.reflect.Constructor;
+
+public class NewInstanceByReflection {
+    public static void main(String[] args) {
+    	
+    	// I do not have .class file
+    	// that is why I am using my real class 
+    	// to get the name of the class
+        String className = SampleClass.class.getName();
+        
+        try {
+            // Get the class object for a given class name
+            Class<?> clazz = Class.forName(className);
+
+            // Get the constructor that takes a String and an int as parameters
+            Constructor<?> constructor = clazz.getConstructor(String.class, int.class);
+
+            // Create a new instance of the class using the constructor
+            Object instance = constructor.newInstance("Hello", 42);
+
+            // Cast the instance to the desired class type
+            SampleClass sample = (SampleClass) instance;
+
+            // Invoke methods on the newly created instance
+            sample.changeInfo("John", "Doe", 30);
+            System.out.println("New name: " + sample.getName());
+            System.out.println("New info: " + sample.toString());
+        } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException |
+                IllegalAccessException | java.lang.reflect.InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+}

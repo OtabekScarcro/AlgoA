@@ -1,0 +1,26 @@
+package main;
+
+public class SampleClass {
+	
+	public SampleClass() {}
+
+	public SampleClass(String str, int num) {
+		System.out.println("You send : " + str + " and " + num);
+	}
+	
+	private String name = "Otabek";
+	private String surname = "Otabaev";
+	private int age = 18;
+	
+	private String getName() {
+		return "My name is Otabek";
+	}
+	
+	void changeInfo(String name, String surname, int age) {
+		this.name = name;
+		this.surname = surname;
+		this.age = age;
+	}
+	
+	
+}

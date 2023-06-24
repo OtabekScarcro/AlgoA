@@ -1,0 +1,10 @@
+package main;
+
+public abstract class Pizza {
+	
+	public abstract void setDescrioption(String newDescription);
+	
+	public abstract String getDescription();
+	
+	public abstract double getCost();
+}

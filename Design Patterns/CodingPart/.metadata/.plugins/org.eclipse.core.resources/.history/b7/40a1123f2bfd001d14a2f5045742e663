@@ -1,0 +1,27 @@
+package main;
+
+public class Song extends SongComponent{
+	private String songName;
+	private String songBandName;
+	private int releaseYear;
+	
+	public Song(String songName, String songBandName, String releaseYear) {
+		this.songName = songName;
+		this.songBandName = songBandName;
+		this.releaseYear = releaseYear;
+	}
+
+	public String getSongName() {
+		return songName;
+	}
+
+	public String getSongBandName() {
+		return songBandName;
+	}
+
+	public String getReleaseYear() {
+		return this.releaseYear;
+	}
+	
+	
+}

@@ -1,0 +1,19 @@
+package main;
+
+import java.util.ArrayList;
+
+public class SongOfThe70s {
+	ArrayList<SongInfo> bestSongs;
+	
+	public SongOfThe70s() {
+		bestSongs = new ArrayList<SongInfo>();
+		
+		addSong("Imagine", "John Lennon", 1971);
+		addSong("American Pie", "Don McLean", 1971);
+		addSong("I will survive", "Gloria Gaynor", 1979);
+	}
+	
+	public void addSong(String songName, String bandName, int yearReleased) {
+		SongInfo songInfo = new SongInfo(songName, bandName, yearReleased);
+	}
+}

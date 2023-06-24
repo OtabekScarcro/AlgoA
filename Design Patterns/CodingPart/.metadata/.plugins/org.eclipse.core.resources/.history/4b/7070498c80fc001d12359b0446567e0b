@@ -1,0 +1,10 @@
+package main;
+
+public class DeviceButton {
+	Command theCommand;
+
+	public DeviceButton(Command theCommand) {
+		this.theCommand = theCommand;
+	}
+	
+}

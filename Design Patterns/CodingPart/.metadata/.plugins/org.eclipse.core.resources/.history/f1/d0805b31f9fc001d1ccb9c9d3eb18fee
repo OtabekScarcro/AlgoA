@@ -1,0 +1,9 @@
+package main;
+
+public class RadioStation {
+	public static void main(String[] args) {
+		SongsOfThe70s songs70s = new SongsOfThe70s();
+		SongsOfThe70s songs70s = new SongsOfThe70s();
+		SongsOfThe70s songs70s = new SongsOfThe70s();
+	}
+}

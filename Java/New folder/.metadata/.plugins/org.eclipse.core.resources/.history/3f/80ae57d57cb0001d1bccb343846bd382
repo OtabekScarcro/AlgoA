@@ -1,0 +1,25 @@
+package socketClient;
+
+import java.io.DataOutputStream;
+import java.net.Socket;
+
+public class Client {
+	public static void main(String[] args) {
+		
+		Socket socket = null;
+		DataOutputStream dos = null;
+		
+		try {
+			/**
+			 * Creates a stream socket and connects it to the
+			 * specified port number at the specified IP address.
+			 */
+			socket = new Socket("localhost", 6666);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+}

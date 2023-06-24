@@ -1,0 +1,15 @@
+package main;
+
+public class StockObserver implements Observer{
+	
+	private double ibmPrice;
+	private double aaplPrice;
+	private double googPrice;
+
+	@Override
+	public void update(double ibmPrice, double aaplPrice, double googPrice) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

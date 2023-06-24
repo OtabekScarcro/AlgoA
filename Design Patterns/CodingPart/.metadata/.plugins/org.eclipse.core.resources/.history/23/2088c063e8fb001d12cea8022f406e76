@@ -1,0 +1,15 @@
+package main;
+
+public class Singleton {
+	private static Singleton firstInstance = null;
+	
+	String[] scrabbleLetters = {"a", "a", "a", "a","a", "a", "a", "a", "a",
+			"a", "a", "a", "a", "a", "a", "a", "a", "a","a", "a", "a", "a",
+			"a", "a", "a", "a", "a", "a", "a", "a", "a","a", "a", "a", "a",
+			"a", "a", "a", "a", "a", "a", "a", "a", "a","a", "a", "a", "a",
+			"a", "a", "a", "a", "a", "a", "a", "a", "a","a", "a", "a", "a",
+			"a", "a", "a", "a", "a", "a", "a", "a", "a","a", "a", "a", "a",
+			"a", "a", "a", "a", "a", "a", "a", "a", "a","a", "a", "a", "a",
+			"a", "a", "a", "a", "a", "a", "a", "a", "a","a", "a", "a", "a",
+	};
+}

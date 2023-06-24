@@ -1,0 +1,9 @@
+package main;
+
+public interface RobotPlan {
+	public void setRobodHead(String head);
+	
+	public void setRobodTorso(String torso);
+	public void setRobodHead(String head);
+	public void setRobodHead(String head);
+}

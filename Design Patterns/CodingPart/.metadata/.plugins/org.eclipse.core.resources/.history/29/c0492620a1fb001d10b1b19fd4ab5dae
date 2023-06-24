@@ -1,0 +1,9 @@
+package main;
+
+public class AnimalPlay {
+	public static void main(String[] args) {
+		Animal sparky = new Dog() {
+			
+		}
+	}
+}

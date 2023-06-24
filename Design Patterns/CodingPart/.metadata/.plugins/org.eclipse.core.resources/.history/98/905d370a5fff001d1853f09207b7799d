@@ -1,0 +1,7 @@
+package main;
+
+public class TestMemento {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,11 @@
+package main;
+
+abstract class EntertainmentDevice {
+	public int deviceState;
+	public int maxSetting;
+	public int volumeSetting;
+	
+	public abstract void buttonFivePressed();
+	
+	
+}

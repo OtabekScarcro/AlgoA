@@ -1,0 +1,35 @@
+package main;
+
+public class InvokeMethodsByReflection {
+	public static void main(String[] args) {
+        SampleClass sample = new SampleClass("Hello", 42);
+
+        // Invoke private methods using Reflection
+        try {
+            // Get the class object for the instance
+            Class<?> clazz = sample.getClass();
+
+            // Access the private methods
+            Method getNameMethod = clazz.getDeclaredMethod("getName");
+            Method changeInfoMethod = clazz.getDeclaredMethod("changeInfo", String.class, String.class, int.class);
+
+            // Enable access to private methods
+            getNameMethod.setAccessible(true);
+            changeInfoMethod.setAccessible(true);
+
+            // Invoke the getName method
+            String name = (String) getNameMethod.invoke(sample);
+            System.out.println("Current name: " + name);
+
+            // Invoke the changeInfo method
+            changeInfoMethod.invoke(sample, "John", "Doe", 30);
+
+            // Invoke the getName method again to get the updated name
+            name = (String) getNameMethod.invoke(sample);
+            System.out.println("Updated name: " + name);
+        } catch (NoSuchMethodException | IllegalAccessException |
+                java.lang.reflect.InvocationTargetException e) {
+            e.printStackTrace();
+        }
+    }
+}

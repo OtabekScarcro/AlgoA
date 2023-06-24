@@ -1,0 +1,17 @@
+package main;
+
+public class ATMMachine {
+	
+	private ATMState hasCard;
+	private ATMState noCard;
+	private ATMState hasCorrectPin;
+	private ATMState atmOutOfMoney;
+	
+	private ATMState atmState;
+	
+	private int cashInMachine = 2000;
+	boolean correctPinEntered = false;
+	
+	
+	
+}

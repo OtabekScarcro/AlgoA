@@ -1,0 +1,11 @@
+package main;
+
+import javax.swing.*;
+
+public class FlyWeightTest extends JFrame{
+	
+	JButton startDrawing;
+	
+	int windowWidth = 1750;
+	int windowHeight = 150;
+}

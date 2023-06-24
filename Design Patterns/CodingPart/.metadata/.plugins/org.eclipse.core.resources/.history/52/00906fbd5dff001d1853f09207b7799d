@@ -1,0 +1,8 @@
+package main;
+
+public class Originator {
+	private String article;
+	public void set(String newArticle) {
+		System.out.println("From Originator: Current version of article\n " + newArticle + "\n");
+	}
+}

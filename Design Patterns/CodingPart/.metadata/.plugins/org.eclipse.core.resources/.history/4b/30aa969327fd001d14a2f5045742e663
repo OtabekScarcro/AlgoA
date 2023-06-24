@@ -1,0 +1,15 @@
+package main;
+
+import java.util.ArrayList;
+
+public class SongGroup extends SongComponent{
+	
+	ArrayList<SongComponent> songComponents = new ArrayList<>();
+	
+
+	public SongGroup(int componentIndex) {
+		super(componentIndex);
+		// TODO Auto-generated constructor stub
+	}
+	
+}

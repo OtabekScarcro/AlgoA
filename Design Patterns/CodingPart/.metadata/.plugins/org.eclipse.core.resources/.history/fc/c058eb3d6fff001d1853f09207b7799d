@@ -1,0 +1,26 @@
+package main;
+
+public class TaxVisitor implements Visitor{
+
+	@Override
+	public double visit(Liquor liquorItem) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double visit(Tobacco tobaccoItem) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double visit(Necessity necessityItem) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+
+	
+}

@@ -1,0 +1,16 @@
+package main;
+
+public class BankAccountFacade {
+	private int accountNumber;
+	private int securityCode;
+	
+	AccountNumberCheck acctChecker;
+	SecurityCodeCheck codeChecker;
+	FundsCheck fundChecker;
+	
+	private void WelcomeToBack() {
+		// TODO Auto-generated method stub
+
+	} bankWelcome;
+	
+}

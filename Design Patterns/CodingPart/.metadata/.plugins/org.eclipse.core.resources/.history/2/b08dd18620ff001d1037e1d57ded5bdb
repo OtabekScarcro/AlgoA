@@ -1,0 +1,15 @@
+package main;
+
+public abstract class Colleague {
+	private Mediator mediator;
+	private int colleagueCode;
+	
+	public Colleague(Mediator mediator) {
+		this.mediator = mediator;
+	}
+	
+	public void saleOffer(String stock, int shares) {
+		
+	}
+	
+}

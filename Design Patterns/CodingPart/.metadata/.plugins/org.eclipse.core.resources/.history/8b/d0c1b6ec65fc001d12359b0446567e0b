@@ -1,0 +1,58 @@
+package main;
+
+public class GeneratingDinamicProxies {
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
+interface MyInterface {
+    void doSomething();
+}
+
+class MyImplementation implements MyInterface {
+    @Override
+    public void doSomething() {
+        System.out.println("Doing something...");
+    }
+}
+
+class MyInvocationHandler implements InvocationHandler {
+    private final Object target;
+
+    public MyInvocationHandler(Object target) {
+        this.target = target;
+    }
+
+    @Override
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        System.out.println("Before invoking method: " + method.getName());
+
+        // Perform additional logic here
+
+        Object result = method.invoke(target, args);
+
+        // Perform additional logic here
+
+        System.out.println("After invoking method: " + method.getName());
+
+        return result;
+    }
+}
+
+public class GeneratingDinamicProxies {
+    public static void main(String[] args) {
+        // Create an instance of MyImplementation
+        MyInterface myImplementation = new MyImplementation();
+
+        // Create a dynamic proxy for MyInterface
+        MyInterface proxy = (MyInterface) Proxy.newProxyInstance(
+                MyInterface.class.getClassLoader(),
+                new Class[]{MyInterface.class},
+                new MyInvocationHandler(myImplementation)
+        );
+
+        // Invoke methods on the dynamic proxy
+        proxy.doSomething();
+    }
+}
+

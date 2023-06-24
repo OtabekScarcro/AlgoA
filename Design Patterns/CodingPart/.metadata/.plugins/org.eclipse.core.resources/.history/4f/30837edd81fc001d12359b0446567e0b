@@ -1,0 +1,14 @@
+package main;
+
+import java.util.List;
+
+public class TurnItAllOff implements Command{
+	
+	List<ElectronicDevice> theDevices;
+	
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+	}
+}

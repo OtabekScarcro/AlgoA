@@ -1,0 +1,17 @@
+package main;
+
+public abstract class SongComponent {
+	
+	public void add(SongComponent newSongComponent) {
+		throw new UnsupportedOperationException();
+	}
+	
+	public void remove(SongComponent newSongComponent) {
+		throw new UnsupportedOperationException();
+	}
+	
+	public void add(SongComponent newSongComponent) {
+		throw new UnsupportedOperationException();
+	}
+	
+}

@@ -1,0 +1,23 @@
+package main;
+
+public class TreeCheesePizzaHartcode extends Pizza {
+
+	@Override
+	public void setDescrioption(String newDescription) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return "Mozarelle, Fontina, Parmesan, Cheese Pizza";
+	}
+
+	@Override
+	public double getCost() {
+		// TODO Auto-generated method stub
+		return 10.00;
+	}
+	
+}

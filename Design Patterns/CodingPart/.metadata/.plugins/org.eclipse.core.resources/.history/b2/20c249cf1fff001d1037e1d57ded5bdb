@@ -1,0 +1,6 @@
+package main;
+
+public class StockOffer {
+	private int stockShares = 0;
+	private String stockSymbol = "";
+}

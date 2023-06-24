@@ -1,0 +1,12 @@
+package main;
+
+public class ItalianHoagie {
+	public void makeSandwich() {
+		cutBun();
+		addMeat();
+		addCheese();
+		addVegetables();
+		addCondiments();
+		wrapTheHoagie();
+	}
+}

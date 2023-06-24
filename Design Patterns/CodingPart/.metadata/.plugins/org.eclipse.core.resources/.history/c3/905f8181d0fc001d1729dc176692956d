@@ -1,0 +1,16 @@
+package main;
+
+public class ItalianHoagie extends Hoagie{
+	public void makeSandwich() {
+		cutBun();
+		addMeat();
+		addCheese();
+		addVegetables();
+		addCondiments();
+		wrapTheHoagie();
+	}
+
+	public void cutBun() {
+		System.out.println("The Hoagie is Cut");
+	}
+}

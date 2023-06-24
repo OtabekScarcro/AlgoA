@@ -1,0 +1,7 @@
+package factorialServerAndClient;
+
+public class Client {
+	public static void main(String[] args) {
+		
+	}
+}

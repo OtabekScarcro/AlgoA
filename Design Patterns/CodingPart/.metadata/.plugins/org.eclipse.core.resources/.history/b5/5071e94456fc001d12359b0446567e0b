@@ -1,0 +1,11 @@
+package main;
+
+public class TestingClone {
+	public static void main(String[] args) {
+		
+		CloneFactory animalMaker = new CloneFactory();
+		Sheep sally = new Sheep();
+		Sheep clonedSheep = Sheep)animalMaker.getClone(sally);
+		
+	}
+}

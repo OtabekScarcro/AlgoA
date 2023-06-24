@@ -1,0 +1,23 @@
+package main;
+
+public class EnemyTank implements EnemyAttacker{
+
+	@Override
+	public void fireWeapon() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void driveForward() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void assignDriver() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

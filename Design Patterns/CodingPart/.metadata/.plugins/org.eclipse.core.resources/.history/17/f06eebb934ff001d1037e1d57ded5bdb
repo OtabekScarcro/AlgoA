@@ -1,0 +1,38 @@
+package main;
+
+import java.util.ArrayList;
+
+public class StockMediator implements Mediator {
+	
+	private ArrayList<Colleague> colleagues;
+	private ArrayList<StockOffer> stockBuyOffers;
+	private ArrayList<StockOffer> stockSellOffers;
+	
+	private int colleagueCodes = 0;
+	
+	public StockMediator() {
+		colleagues = new ArrayList<Colleague>();
+		stockBuyOffers = new ArrayList<StockOffer>();
+		stockSellOffers = new ArrayList<StockOffer>();
+	}
+	
+	@Override
+	public void addColleague(Colleague newColleague) {
+		colleagues.add(newColleague);
+		colleagueCodes++;
+		newColleague.setCollCode(colleagueCodes);
+	}
+
+	@Override
+	public void saleOffer(String stocks, int shares, int collCode) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void buyOffer(String stocks, int shares, int collCode) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

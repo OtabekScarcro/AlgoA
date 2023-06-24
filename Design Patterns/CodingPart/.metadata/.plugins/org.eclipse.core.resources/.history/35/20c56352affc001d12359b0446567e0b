@@ -1,0 +1,17 @@
+package main;
+
+public class TVDevice extends EntertainmentDevice{
+
+	@Override
+	public void buttonFivePressed() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void buttonSixPressed() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

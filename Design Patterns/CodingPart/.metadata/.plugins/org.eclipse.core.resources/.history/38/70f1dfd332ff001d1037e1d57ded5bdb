@@ -1,0 +1,7 @@
+package main;
+
+public class GormanSlacks extends Colleague{
+	public GormanSlacks(Mediator newMediator) {
+		
+	}
+}

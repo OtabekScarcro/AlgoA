@@ -1,0 +1,52 @@
+package main;
+
+public class BankAccountFacade {
+	private int accountNumber;
+	private int securityCode;
+	
+	AccountNumberCheck acctChecker;
+	SecurityCodeCheck codeChecker;
+	FundsCheck fundChecker;
+	
+	WelcomeToBank bankWelcome;
+	
+	public BankAccountFacade(int newAccount, int secCode) {
+		this.accountNumber = newAccount;
+		this.securityCode = secCode;
+		
+		bankWelcome = new WelcomeToBank();
+		acctChecker = new AccountNumberCheck();
+		codeChecker = new SecurityCodeCheck();
+		fundChecker = new FundsCheck();
+	}
+	
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+	
+	public int getSecurityCode() {
+		return securityCode;
+	}
+	
+	public void withdrawChash(double cashToGet) {
+		
+		if(acctChecker.accountActive(getAccountNumber()) &&
+				codeChecker.isCodeCorrect(getSecurityCode()) &&
+				fundChecker.haveEnoughMoney(cashToGet)) {
+			System.out.println("Transaction Completed\n");
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+

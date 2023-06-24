@@ -1,0 +1,13 @@
+package main;
+
+public class Necessity implements Visitable{
+	private double price;
+
+	public Tobacco(double price) {
+		this.price = price;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+}

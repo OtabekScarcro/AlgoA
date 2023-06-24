@@ -1,0 +1,9 @@
+package main;
+
+public class FundsCheck {
+	
+	private double cashInAccount = 1000.00;
+	
+	public double getCashInAccount() { return cashInAccount }
+	
+}

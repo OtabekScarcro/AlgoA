@@ -1,0 +1,19 @@
+
+public abstract class EnemyShip {
+	private String name;
+	private double amtDamage;
+	
+	public String getName() {
+		return name;
+	}
+	public double getDamage() {
+		return amtDamage;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setDamage(double amtDamage) {
+		this.amtDamage = amtDamage;
+	}
+	
+}

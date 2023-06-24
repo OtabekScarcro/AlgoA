@@ -1,0 +1,30 @@
+package main;
+
+public class SongListGenerator {
+	public static void main(String[] args) {
+		
+		SongComponent industrialMusic = 
+				new SongGroup("Industrial", "is a style of experimental music that draws on transgressive");
+		
+		SongComponent HeavyMetalMusic = 
+				new SongGroup("\nHeavyMetal", "is a style of rock music that developed in the late 1960s");
+		
+		SongComponent dubstepMusic = 
+				new SongGroup("\nDubstep", "is a style of electronic dance that originated in South London");
+		
+		SongComponent everySong = new SongGroup("Song List", "Every Song Available");
+		
+		everySong.add(industrialMusic);
+		industrialMusic.add(new Song("Head Like a hole", "NIN", 1990));
+		industrialMusic.add(new Song("Headhunter", "Front 242", 1988));
+		
+		everySong.add(dubstepMusic);
+		dubstepMusic.add(new Song("Centipede", "knife party", 2012));
+		dubstepMusic.add(new Song("Tetris", "Doctor P", 2011));
+		
+		everySong.add(HeavyMetalMusic);
+		HeavyMetalMusic.add(new Song());
+		HeavyMetalMusic.add(new Song());
+		
+	}
+}

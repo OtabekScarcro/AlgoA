@@ -1,0 +1,32 @@
+package main;
+
+public class Sheep implements Animal{
+
+	public Sheep() {
+		System.out.println("Sheepp is made");
+	}
+	
+	@Override
+	public Animal makeCopy() {
+		System.out.println("Sheep is beeing made");
+		Sheep sheepObject = null;
+		
+		try {
+			sheepObject = (Sheep)super.clone();
+		} catch (CloneNotSupportedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return sheepObject;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Dolly is my favourite";
+	}
+	
+	
+
+}

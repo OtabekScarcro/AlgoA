@@ -1,0 +1,6 @@
+
+public interface Visitor {
+	
+	double visit(Liquor liquorItem);
+
+}

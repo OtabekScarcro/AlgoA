@@ -1,0 +1,20 @@
+package main;
+
+public class GetTheStock implements Runnable{
+	
+	private int startTime;
+	private String stock;
+	private double price;
+	
+	private Subject stockGrabber;
+	
+	public GetTheStock
+	
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

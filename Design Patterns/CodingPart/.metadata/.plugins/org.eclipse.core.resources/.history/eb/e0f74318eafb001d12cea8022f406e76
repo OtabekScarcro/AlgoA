@@ -1,0 +1,8 @@
+package main;
+
+public class ScrabbleTest {
+	public static void main(String[] args) {
+		Singleton newInstance = Singleton.getInstance();
+		
+	}
+}

@@ -1,0 +1,11 @@
+package main;
+
+public class TestStockMediator {
+	public static void main(String[] args) {
+		
+		StockMediator nyse = new StockMediator();
+		
+		GormanSlacks broker = new GormanSlacks(nyse);
+		
+	}
+}

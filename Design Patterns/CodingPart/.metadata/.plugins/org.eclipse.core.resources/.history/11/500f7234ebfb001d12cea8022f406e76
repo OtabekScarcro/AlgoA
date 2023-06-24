@@ -1,0 +1,8 @@
+package main;
+
+public class ScrabbleTestThreads {
+	public static void main(String[] args) {
+		Runnable getTiles = new GetTheTiles();
+		Runnable getTiles = new GetTheTiles();
+	}
+}

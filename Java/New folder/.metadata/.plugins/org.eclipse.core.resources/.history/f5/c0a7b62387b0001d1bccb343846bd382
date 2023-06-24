@@ -1,0 +1,28 @@
+package socketClientForChat;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.Socket;
+
+public class Client {
+	public static void main(String[] args) {
+		Socket socket = null;
+		DataInputStream dis = null;
+		DataOutputStream dos = null;
+		BufferedReader br = null;
+		
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+}

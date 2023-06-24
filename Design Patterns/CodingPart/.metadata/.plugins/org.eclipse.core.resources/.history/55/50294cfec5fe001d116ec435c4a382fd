@@ -1,0 +1,46 @@
+
+public class ConversionContext {
+	private String conversionQues = "";
+	private String conversionResponse = "";
+	private String fromConversion = "";
+	private String toConversion = "";
+	
+	String[] partsOfQues;
+	
+	public ConversionContext(String input) {
+		this.conversionQues = input;
+		partsOfQues = getInput().split(" ");
+		
+		fromConversion = getCapitalized(partsOfQues[1]);
+		
+		
+	}
+	
+	public String getInput() { return conversionQues; }
+	
+	public String getCapitalized(String wordToCapitalize) {
+		wordToCapitalize = wordToCapitalize.toLowerCase();
+		wordToCapitalize = Character.toUpperCase(wordToCapitalize.charAt(0)) + 
+				wordToCapitalize.substring(1);
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+package main;
+
+public class Song extends SongComponent{
+	private String songName;
+	private String songBandName;
+	private String releaseYear;
+	
+	
+	
+}

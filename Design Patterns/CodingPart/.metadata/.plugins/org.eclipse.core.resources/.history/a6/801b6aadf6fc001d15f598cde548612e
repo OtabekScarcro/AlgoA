@@ -1,0 +1,7 @@
+package main;
+
+public class SongInfo {
+	private String songName;
+	private String bandName;
+	private int yearReleased;
+}

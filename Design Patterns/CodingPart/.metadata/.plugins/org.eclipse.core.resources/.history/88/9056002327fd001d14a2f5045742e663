@@ -1,0 +1,33 @@
+package main;
+
+public abstract class SongComponent {
+	
+	public void add(SongComponent newSongComponent) {
+		throw new UnsupportedOperationException();
+	}
+	
+	public void remove(SongComponent newSongComponent) {
+		throw new UnsupportedOperationException();
+	}
+	
+	public SongComponent(int componentIndex) {
+		throw new UnsupportedOperationException();
+	}
+	
+	public String getSongName() {
+		throw new UnsupportedOperationException();
+	}
+	
+	public String getBandName() {
+		throw new UnsupportedOperationException();
+	}
+	
+	public int getReleaseYear() {
+		throw new UnsupportedOperationException();
+	}
+	
+	public String displaySongInfo() {
+		throw new UnsupportedOperationException();
+	}
+	
+}

@@ -1,0 +1,29 @@
+package main;
+
+import java.util.ArrayList;
+
+public class SongGroup extends SongComponent{
+	
+	ArrayList<SongComponent> songComponents = new ArrayList<>();
+	
+	private String gourpName;
+	private String groupDescription;
+	
+	public SongGroup(String gourpName, String groupDescription) {
+		this.gourpName = gourpName;
+		this.groupDescription = groupDescription;
+	}
+
+	public String getGourpName() {
+		return gourpName;
+	}
+
+	public String getGroupDescription() {
+		return groupDescription;
+	}
+	
+	public void add(SongComponent newSongComponent) {
+		songComponents.add(newSongComponent);
+	}
+	
+}

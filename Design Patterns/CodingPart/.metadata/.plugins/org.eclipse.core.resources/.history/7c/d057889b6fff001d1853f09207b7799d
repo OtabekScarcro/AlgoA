@@ -1,0 +1,33 @@
+package main;
+
+import java.text.DecimalFormat;
+
+public class TaxVisitor implements Visitor{
+	
+	DecimalFormat df = new DecimalFormat("#.##");
+	public TaxVisitor() {
+		
+	}
+
+	@Override
+	public double visit(Liquor liquorItem) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double visit(Tobacco tobaccoItem) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double visit(Necessity necessityItem) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+
+	
+}

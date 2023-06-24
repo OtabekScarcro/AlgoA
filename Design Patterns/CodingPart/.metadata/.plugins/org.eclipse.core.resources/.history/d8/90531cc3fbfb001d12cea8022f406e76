@@ -1,0 +1,9 @@
+package main;
+
+public class TestRobotBuilder {
+	public static void main(String[] args) {
+		RobotBuilder oldStyleRobot = new OldRobotBuilder();
+		
+		RobotEnginer robotEnginer = new RobotEnginer(oldStyleRobot);
+	}
+}

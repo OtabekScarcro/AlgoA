@@ -1,0 +1,25 @@
+package main;
+
+import java.util.Scanner;
+
+public class EnemyShipTesting {
+
+	public static void main(String[] args) {
+		EnemyShip ufoShip = new UFOEnemyShip();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		doStuffEnemy(ufoShip);
+		
+		
+	}
+
+	private static void doStuffEnemy(EnemyShip enemyShip) {
+		enemyShip.displayEnemyShip();
+		enemyShip.followHeroShip();
+		enemyShip.enemyShipShoots();
+	}
+
+}

@@ -1,0 +1,10 @@
+package main;
+
+public class TestCalcChain {
+	public static void main(String[] args) {
+		Chain chain1 = new AddNumbers();
+		Chain chain2 = new SubtractNumbers();
+		Chain chain3 = new MultNumbers();
+		Chain chain4 = new DivideNumbers();
+	}
+}

@@ -1,0 +1,10 @@
+package main;
+
+public class Liquor implements Visitable{
+	private double price;
+
+	public Liquor(double price) {
+		this.price = price;
+	}
+	
+}

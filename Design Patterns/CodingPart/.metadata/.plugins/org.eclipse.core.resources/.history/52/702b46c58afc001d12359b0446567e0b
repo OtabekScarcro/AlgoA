@@ -1,0 +1,11 @@
+package main;
+
+import java.util.Random;
+
+public class EnemyRobot {
+	Random generator = new Random();
+	
+	public void smashWithHands() {
+		
+	}
+}

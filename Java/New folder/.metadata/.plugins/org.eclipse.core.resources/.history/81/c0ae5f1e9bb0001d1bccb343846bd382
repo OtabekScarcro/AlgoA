@@ -1,0 +1,5 @@
+package FactorialServerAndClient;
+
+public class FactorialClient {
+
+}

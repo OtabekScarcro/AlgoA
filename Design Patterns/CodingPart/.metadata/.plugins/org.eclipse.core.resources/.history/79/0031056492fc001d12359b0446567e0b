@@ -1,0 +1,15 @@
+package main;
+
+public class BankAccountFacade {
+	private int accountNumber;
+	private int securityCode;
+	
+	AccountNumberCheck acctChecker;
+	SecurityCodeCheck codeChecker;
+	FundsCheck fundChecker;
+	
+	WelcomeToBank bankWelcome;
+	
+	public BankAccountFacade(int newAccount, int secCode)
+	
+}

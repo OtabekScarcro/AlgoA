@@ -1,0 +1,8 @@
+package main;
+
+public abstract class Expression {
+	
+	public abstract String gallons(double quantity);
+	
+	
+}

@@ -1,0 +1,15 @@
+package main;
+
+public class Sheep implements Animal{
+
+	public Sheep() {
+		System.out.println("Sheepp is made");
+	}
+	
+	@Override
+	public Animal makeCopy() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
